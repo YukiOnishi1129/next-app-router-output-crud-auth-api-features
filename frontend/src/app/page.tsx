@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
-import { LoginTemplate } from "@/components/templates";
-import { getSession } from "@/actions/auth";
-import { NAVIGATION_LIST } from "@/constants/navigation";
+import { LoginTemplate } from "@/features/auth/components";
+import { getSession } from "@/features/auth/actions/auth";
+import { NAVIGATION_LIST } from "@/shared/constants/navigation";
 
 export default async function LoginPage() {
   const session = await getSession();

@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
-import { SignUpTemplate } from "@/components/templates";
-import { NAVIGATION_LIST } from "@/constants/navigation";
-import { getSession } from "@/actions/auth";
+import { SignUpTemplate } from "@/features/auth/components";
+import { NAVIGATION_LIST } from "@/shared/constants/navigation";
+import { getSession } from "@/features/auth/actions/auth";
 
 export default async function SignupPage() {
   const session = await getSession();

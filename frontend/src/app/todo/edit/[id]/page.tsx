@@ -1,5 +1,5 @@
-import { TodoEditTemplate } from "@/components/templates";
-import { getTodo } from "@/actions/api/todoApi";
+import { TodoEditTemplate } from "@/features/todos/components";
+import { getTodo } from "@/features/todos/apis/todoApi";
 
 type TodoEditPageProps = {
   params: Promise<{ id: string }>;
