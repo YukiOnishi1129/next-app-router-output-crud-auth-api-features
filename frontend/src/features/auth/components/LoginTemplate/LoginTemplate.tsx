@@ -48,20 +48,6 @@ export const LoginTemplate: FC = () => {
           />
         </div>
         <div className={styles.area}>
-          <Controller
-            name="password_confirmation"
-            render={({ field }) => (
-              <InputFormSection
-                type="password"
-                placeholder="confirm password"
-                errorMessage={errors.password_confirmation?.message}
-                {...field}
-              />
-            )}
-            control={control}
-          />
-        </div>
-        <div className={styles.area}>
           <CommonButton type="submit">{"Login"}</CommonButton>
         </div>
         <div className={styles.link}>
