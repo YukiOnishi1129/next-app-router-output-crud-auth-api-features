@@ -1,5 +1,5 @@
-import { TodoListTemplate } from "@/components/templates";
-import { getTodoList } from "@/actions/api/todoApi";
+import { TodoListTemplate } from "@/features/todos/components";
+import { getTodoList } from "@/features/todos/apis/todoApi";
 
 export default async function TodoListPage() {
   const res = await getTodoList();
